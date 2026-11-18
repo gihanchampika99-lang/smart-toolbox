@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090d18;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  padding: 22px 7%;
+  border-bottom: 1px solid #20283a;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  background: #3478f6;
+  padding: 13px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.brand h2 {
+  font-size: 19px;
+}
+
+.brand p {
+  color: #8994a9;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 45px 7%;
+}
+
+.tag {
+  color: #5593ff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.welcome h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.2;
+  margin-top: 18px;
+}
+
+.welcome h1 span {
+  color: #5593ff;
+}
+
+.description {
+  color: #929db1;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin: 45px 0 20px;
+  font-size: 20px;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.tool-card {
+  background: #141c2d;
+  border: 1px solid #253149;
+  border-radius: 18px;
+  padding: 23px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tool-card:hover {
+  border-color: #5593ff;
+  transform: translateY(-4px);
+}
+
+.tool-icon {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.tool-card h3 {
+  font-size: 17px;
+  margin-bottom: 9px;
+}
+
+.tool-card p {
+  color: #929db1;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.tool-card span {
+  color: #5593ff;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  color: #69758b;
+  font-size: 12px;
+  margin-top: 55px;
+}
+
+@media (max-width: 420px) {
+  main {
+    padding-top: 35px;
+  }
+
+  .tools {
+    gap: 11px;
+  }
+
+  .tool-card {
+    padding: 16px;
+  }
+
+  .tool-card h3 {
+    font-size: 15px;
+  }
+}
